@@ -10,9 +10,8 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-#include <stdio.h>
-#include <string.h>
+// #include <stdio.h>
+// #include <string.h>
 
 int	ft_strcmp(char *s1, char *s2)
 {
@@ -26,21 +25,22 @@ int	ft_strcmp(char *s1, char *s2)
 		i++;
 	}
 	if (!s2[i])
-		return 0;
+		return (0);
 	return (0 - s2[i - 1]);
 }
 
-int	main(int n, char *args[])
+/*int	main(int n, char *args[])
 {
 	int		p;
-	char*	s1;
-	char*	s2;
-	if(n != 3)
+	char	*s1;
+	char	*s2;
+
+	if (n != 3)
 		return (0);
 	s1 = args[1];
 	s2 = args[2];
-	p = ft_strcmp(s1,s2);
-	printf("%d",p);
-	printf("\n%d",strcmp(s1,s2));
+	p = ft_strcmp(s1, s2);
+	printf("%d", p);
+	printf("\n%d", strcmp(s1, s2));
 	return (0);
-}
+}*/
